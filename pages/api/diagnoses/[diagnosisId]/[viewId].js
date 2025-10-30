@@ -56,8 +56,12 @@ export default async function handler(req, res) {
     const {diagnosisId, viewId} = req.query;
     const {textFormat = "md"} = req.query;
 
+    // Validate diagnosisId and viewId to be safe path segments
+    const safeIdRegex = /^[a-zA-Z0-9_-]+$/;
     if (!diagnosisId || !viewId)
         return res.status(400).json({error: "Diagnosis ID and viewId are required"});
+    if (!safeIdRegex.test(diagnosisId) || !safeIdRegex.test(viewId))
+        return res.status(400).json({error: "Invalid diagnosisId or viewId"});
 
     const cacheKey = `diagnosis:${diagnosisId}:${viewId}:${textFormat}`;
     const apiUrl = `${config.API_BASE_URL}/libraries/${config.AUDIENCE}/diagnoses/${diagnosisId}`;
