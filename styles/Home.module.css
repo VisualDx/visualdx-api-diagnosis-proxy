@@ -1,0 +1,83 @@
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #fafafa;
+  color: #222;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+}
+
+.main {
+  flex: 1;
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 2rem;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+  background: white;
+  border-radius: 12px;
+}
+
+/* 👇 Tất cả selector global đổi thành dạng .main h1, .main p, v.v. */
+.main h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1.5rem;
+  color: #111;
+}
+
+.main h2 {
+  font-size: 1.5rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 0.3rem;
+}
+
+.main p {
+  font-size: 1rem;
+  margin: 1rem 0;
+}
+
+.main ol,
+.main ul {
+  margin-left: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.main li {
+  margin-bottom: 0.8rem;
+}
+
+.main pre {
+  background: #f4f4f4;
+  border-radius: 8px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 0.8rem 0 1.5rem 0;
+}
+
+.main code {
+  background: #efefef;
+  padding: 0.2rem 0.4rem;
+  border-radius: 4px;
+  font-size: 0.95rem;
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+.main a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.main a:hover {
+  text-decoration: underline;
+}
+
+.footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+  border-top: 1px solid #eaeaea;
+  padding: 1.5rem 0;
+  background-color: #fff;
+}
