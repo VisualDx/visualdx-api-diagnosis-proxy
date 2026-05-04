@@ -16,7 +16,7 @@
     "node-cache": "^5.1.2"
   },
   "devDependencies": {
-    "eslint": "^9",
+    "eslint": "^10",
     "eslint-config-next": "16.1.6",
     "@eslint/eslintrc": "^3"
   }
